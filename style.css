@@ -1,0 +1,47 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+form input {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #2a3bd2;
+    transition: border-color 0.3s ease;
+}
+
+form button {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #2a3bd2;
+}
+
+form button:hover {
+    background-color: #2a3bd2;
+    color: #fff;
+}
+
+/* Only show validation styles after user interaction */
+form input.touched.valid {
+    border: 2px solid #0ace3e;
+}
+
+form input.touched.invalid {
+    border: 2px solid #ff0000;
+}
+
+.error-message {
+    color: #ff0000;
+    font-size: 12px;
+    margin-top: 4px;
+    margin-bottom: 8px;
+}
